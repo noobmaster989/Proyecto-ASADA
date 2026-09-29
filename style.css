@@ -151,6 +151,13 @@ padding-top: 40px;
   .timeline-punto.grande { left: 5px !important; }
 }
 
+.historia {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 10px;
+  
+}
+
 
 @media (max-width: 768px) {
   .collage-fondo {
