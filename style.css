@@ -54,6 +54,7 @@
   position: relative;
   z-index: 2;
 }
+
 .mapa{
   position: relative;
   background-color: none;
@@ -63,6 +64,7 @@ padding-top: 40px;
   width: 50%;
   border: olivedrab;
 }
+
 .mapa-zona {
   position: relative;
   background-color: #d3e9ff;
@@ -418,7 +420,39 @@ padding-top: 40px;
     display: block;
 }
 
+.mapa-zona {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.mapa {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+    .mapa-zona {
+        padding: 0;
+    }
+
+    .mapa {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px !important;
+    }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 991px) {
+    .mapa {
+        width: 100%;
+        max-width: 850px;
+    }
 /* Móvil */
 
 @media (max-width: 576px) {
