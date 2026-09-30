@@ -157,8 +157,31 @@ padding-top: 40px;
   border-radius: 10px;
   
 }
+.txt-mision {
+  font-size: 1.2rem;
+color: #333;
+  line-height: 1.6;
+  padding-right: 500px;
+  text-align: justify;
+}
+.contenido-mision {
+  margin-left: 1px;
+  
+ 
+}
+.txt-vision {
+  font-size: 1.2rem;
+color: #333;
+  line-height: 1.6;
+  padding-left: 500px;
+  text-align: right;
+}
 
-
+.titulo-vision {
+  padding-left: 830px;
+  
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
   .collage-fondo {
     grid-template-columns: repeat(2, 1fr);
