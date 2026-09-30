@@ -156,26 +156,25 @@ padding-top: 40px;
   padding: 40px 20px;
   border-radius: 10px;
   
-}
-.txt-mision {
-  font-size: 1.2rem;
-color: #333;
-  line-height: 1.6;
-  padding-right: 500px;
-  text-align: justify;
-}
-.contenido-mision {
-  margin-left: 1px;
-  
- 
-}
+}.txt-mision,
 .txt-vision {
-  font-size: 1.2rem;
-color: #333;
-  line-height: 1.6;
-  padding-left: 500px;
-  text-align: right;
+    font-size: 1.2rem;
+    color: #333;
+      background-color: #f8f9fa;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
 }
+
+.contenedor-mision,
+.contenedor-vision {
+    padding: 20px;
+      background-color: #f8f9fa;
+}
+.titulo-vision {
+    margin-bottom: 20px;  background-color: #f8f9fa;
+}
+
 .btn-whatsapp {
     position: fixed;
     right: 20px;
@@ -433,10 +432,23 @@ color: #333;
     }
 
 }
-.titulo-vision {
-  padding-left: 830px;
-  
-  margin-bottom: 20px;
+@media (max-width: 768px) {
+
+    .contenedor-mision,
+    .contenedor-vision {
+        padding: 15px;
+    }
+
+    .txt-mision,
+    .txt-vision {
+        padding: 0;
+        text-align: justify;
+        font-size: 1.05rem;
+    }
+
+    .contenedor-vision h2 {
+        text-align: left !important;
+    }
 }
 @media (max-width: 768px) {
   .collage-fondo {
