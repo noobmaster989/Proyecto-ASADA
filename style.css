@@ -433,8 +433,43 @@ padding-top: 40px;
     display: block;
     object-fit: contain;
 }
+.tarjeta-historia {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  }
+  /* La tarjeta bajo el mouse sube y se resalta */
+  .tarjeta-historia:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 0 2px #0dcaf0, 0 14px 30px rgba(0, 0, 0, 0.18);
+  }
+  /* Las demás se atenúan para que se enfoque la que se está leyendo */
+  .historia-tarjetas:has(.tarjeta-historia:hover) .tarjeta-historia:not(:hover) {
+    opacity: 0.5;
+  }
+  .tarjeta-historia {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  }
+  /* La tarjeta bajo el mouse sube y se resalta */
+  .tarjeta-historia:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 0 2px #0dcaf0, 0 14px 30px rgba(0, 0, 0, 0.18);
+  }
+  /* Las demás se atenúan para que se enfoque la que se está leyendo */
+  .historia-tarjetas:has(.tarjeta-historia:hover) .tarjeta-historia:not(:hover) {
+    opacity: 0.5;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tarjeta-historia { transition: none; }
+    .tarjeta-historia:hover { transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tarjeta-historia { transition: none; }
+    .tarjeta-historia:hover { transform: none; }
+  }
 
-/* Celulares */
+
+
 @media (max-width: 576px) {
     .mapa-zona {
         padding: 0;
@@ -447,13 +482,12 @@ padding-top: 40px;
     }
 }
 
-/* Tablets */
+
 @media (min-width: 577px) and (max-width: 991px) {
     .mapa {
         width: 100%;
         max-width: 850px;
-    }
-/* Móvil */
+    }}
 
 @media (max-width: 576px) {
 
@@ -484,6 +518,12 @@ padding-top: 40px;
         text-align: left !important;
     }
 }
+ @media (min-width: 769px) {
+    .historia-tarjetas .timeline-item.izquierda { padding-right: 28px; }
+    .historia-tarjetas .timeline-item.derecha   { padding-left: 28px; text-align: left; }
+  }
+  .historia-tarjetas .timeline-item { padding-bottom: 28px; }
+  .historia-tarjetas .timeline-punto { top: 37px; }
 @media (max-width: 768px) {
   .collage-fondo {
     grid-template-columns: repeat(2, 1fr);
