@@ -459,6 +459,61 @@ padding-top: 40px;
   .historia-tarjetas:has(.tarjeta-historia:hover) .tarjeta-historia:not(:hover) {
     opacity: 0.5;
   }
+  /* Contenido detallado oculto inicialmente */
+.texto-detallado {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
+}
+
+/* La descripción corta se muestra inicialmente */
+.descripcion-corta {
+    max-height: 100px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+/* Cuando se abre:
+   escondemos la descripción corta */
+.item-expandible.abierto .descripcion-corta {
+    max-height: 0;
+    opacity: 0;
+    margin: 0 !important;
+}
+
+/* Y mostramos la explicación detallada */
+.item-expandible.abierto .texto-detallado {
+    max-height: 600px;
+    opacity: 1;
+}
+
+/* Efecto de tarjeta abierta */
+.item-expandible.abierto {
+    transform: scale(1.03);
+}
+
+/* Hover */
+.item-expandible:hover {
+    transform: scale(1.02);
+}
+
+/* En celular */
+@media (max-width: 768px) {
+
+    .item-expandible:hover {
+        transform: none;
+    }
+
+    .item-expandible.abierto {
+        transform: none;
+    }
+
+    .item-expandible.abierto .texto-detallado {
+        max-height: 800px;
+    }
+}
   @media (prefers-reduced-motion: reduce) {
     .tarjeta-historia { transition: none; }
     .tarjeta-historia:hover { transform: none; }

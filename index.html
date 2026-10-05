@@ -69,7 +69,7 @@
     <div class="carousel-item">
       <img src="Img/Muestreo/principal.jpeg" class="d-block w-100" alt="Slide 2">
       <div class="carousel-caption">
-        <h2 class="fw-bold">Proyecto mejora</h2>
+        <h2 class="fw-bold">Sistema de desinfeccion</h2>
         <p>Conoce lo que ofrece la ASADA.</p>
         <a href="#proyecto" class="btn btn-info">Mas información</a>
       </div>
@@ -202,60 +202,54 @@
   </div>
 </section>
 <br>
+<!-- ============================================================
+     REEMPLAZA en index.html todo lo que va desde <section id="proyecto" ...>
+     hasta el </section> que cierra "tratamiento" (justo antes del </div>
+     que está antes de <div id="Informe">).
+     Usa las mismas clases del timeline que ya tienes en style.css.
+     ============================================================ -->
+
+<!-- ===================== TIMELINE: PROGRAMA DE DESINFECCIÓN ===================== -->
 <section id="proyecto" class="container my-5">
     <br>
 
     <h5 class="text-left text-info">Nuestros planes</h5>
 
     <h2 class="fw-bold text-center mb-2">
-        Proyecto de <span class="text-info">mejoras</span>
+        Programa de <span class="text-info">Desinfección</span>
     </h2>
 
     <p class="text-center text-muted mb-5">
-        Acciones para mantener y proteger nuestro acueducto
+        Cómo desinfectamos el agua para que llegue segura a cada hogar
     </p>
 
     <div class="timeline">
 
-        
+        <!-- 1. Clorador -->
         <div class="timeline-item izquierda">
             <span class="timeline-punto"></span>
 
             <div class="card timeline-card shadow-sm border-0 p-4 item-expandible"
                  onclick="toggleItem(this)">
 
-                <div class="timeline-fecha">Almacenamiento</div>
+                <div class="timeline-fecha">Cloración</div>
 
-                <h3 class="h5 fw-bold">
-                    Tanque de almacenamiento
-                </h3>
+                <h3 class="h5 fw-bold">Sistema de cloración</h3>
 
                 <p class="mb-2 text-muted descripcion-corta">
-                    Mantener en buenas condiciones el tanque de almacenamiento
-                    para garantizar una adecuada reserva y el abastecimiento
-                    continuo de agua potable.
+                    En el área del pozo contamos con una estructura donde está
+                    instalado el clorador y el recipiente del cloro líquido.
                 </p>
 
                 <div class="texto-detallado">
                     <hr>
-
                     <p class="text-muted">
-                        El tanque de almacenamiento es una parte fundamental
-                        del sistema de abastecimiento, ya que permite contar
-                        con una reserva de agua para atender las necesidades
-                        de la comunidad.
+                        La desinfección se hace con una bomba dosificadora digital
+                        de cloro marca Seko, con una presión máxima de 110 psi.
                     </p>
-
-                    <p class="text-muted">
-                        Como parte de las labores de mantenimiento se contempla
-                        la limpieza periódica del tanque, así como la revisión
-                        de sus diferentes componentes para garantizar que se
-                        encuentre en condiciones adecuadas de funcionamiento.
-                    </p>
-
                     <p class="text-muted mb-0">
-                        Estas acciones contribuyen a mantener la calidad del
-                        agua y la seguridad del sistema de abastecimiento.
+                        El agua se clora antes de pasar al tanque de
+                        almacenamiento y de distribuirse a las casas.
                     </p>
                 </div>
 
@@ -263,49 +257,31 @@
                     <i class="bi bi-plus-circle"></i>
                     Haz clic para conocer más
                 </small>
-
             </div>
         </div>
 
-
+        <!-- 2. Producto -->
         <div class="timeline-item derecha">
             <span class="timeline-punto"></span>
 
             <div class="card timeline-card shadow-sm border-0 p-4 item-expandible"
                  onclick="toggleItem(this)">
 
-                <div class="timeline-fecha">Protección</div>
+                <div class="timeline-fecha">Producto</div>
 
-                <h3 class="h5 fw-bold">
-                    Programa de protección para las fuentes
-                </h3>
+                <h3 class="h5 fw-bold">Hipoclorito de sodio al 12 %</h3>
 
                 <p class="mb-2 text-muted descripcion-corta">
-                    Proteger las fuentes de abastecimiento mediante el control
-                    de acceso, cercado y mantenimiento de las áreas cercanas,
-                    reduciendo los riesgos de contaminación.
+                    Usamos cloro líquido almacenado en un recipiente de 19 litros
+                    junto al clorador.
                 </p>
 
                 <div class="texto-detallado">
                     <hr>
-
-                    <p class="text-muted">
-                        La protección de las fuentes de abastecimiento busca
-                        reducir los riesgos que puedan afectar la calidad del
-                        agua y garantizar condiciones adecuadas alrededor de
-                        las instalaciones.
-                    </p>
-
-                    <p class="text-muted">
-                        Para ello, se contempla mantener las áreas protegidas
-                        mediante cercado, rotulación y mecanismos que permitan
-                        controlar el acceso a las instalaciones.
-                    </p>
-
                     <p class="text-muted mb-0">
-                        El ingreso a estas áreas debe mantenerse restringido
-                        al personal autorizado, contribuyendo así a proteger
-                        las fuentes de abastecimiento.
+                        La bomba dosifica el hipoclorito de sodio de forma
+                        automática, para mantener el cloro residual dentro del
+                        rango permitido en toda la red.
                     </p>
                 </div>
 
@@ -313,48 +289,68 @@
                     <i class="bi bi-plus-circle"></i>
                     Haz clic para conocer más
                 </small>
-
             </div>
         </div>
 
-
+        <!-- 3. Mantenimiento del clorador -->
         <div class="timeline-item izquierda">
-            <span class="timeline-punto "></span>
+            <span class="timeline-punto"></span>
+
+            <div class="card timeline-card shadow-sm border-0 p-4 item-expandible"
+                 onclick="toggleItem(this)">
+
+                <div class="timeline-fecha">Revisión</div>
+
+                <h3 class="h5 fw-bold">Revisión y limpieza del clorador</h3>
+
+                <p class="mb-2 text-muted descripcion-corta">
+                    El equipo se revisa y se limpia una vez al mes en verano y
+                    cada 22 días en invierno.
+                </p>
+
+                <div class="texto-detallado">
+                    <hr>
+                    <p class="text-muted mb-0">
+                        Con estas revisiones evitamos fallas en la dosificación
+                        y mantenemos el equipo funcionando de forma continua.
+                    </p>
+                </div>
+
+                <small class="text-info mt-3 texto-click">
+                    <i class="bi bi-plus-circle"></i>
+                    Haz clic para conocer más
+                </small>
+            </div>
+        </div>
+
+        <!-- 4. Control del cloro -->
+        <div class="timeline-item derecha">
+            <span class="timeline-punto"></span>
 
             <div class="card timeline-card destacado shadow p-4 text-center item-expandible"
                  onclick="toggleItem(this)">
 
-                <div class="timeline-fecha">Mantenimiento</div>
+                <div class="timeline-fecha">Control</div>
 
-                <h3 class="h4 fw-bold">
-                    Mantenimiento de la estructura
-                </h3>
+                <h3 class="h4 fw-bold">Medición del cloro residual</h3>
 
                 <p class="mb-2 text-muted descripcion-corta">
-                    Realizar mantenimiento periódico de las estructuras del
-                    acueducto, incluyendo limpieza, revisión y conservación
-                    de sus diferentes componentes.
+                    Medimos el cloro residual libre en el pozo, el tanque y en
+                    distintas casas de la red.
                 </p>
 
                 <div class="texto-detallado">
                     <hr>
-
                     <p class="text-muted">
-                        El mantenimiento periódico permite conservar en buenas
-                        condiciones las diferentes estructuras que forman parte
-                        del sistema de abastecimiento.
+                        El valor máximo permitido es 1,0 mg/L. En 2025 todas las
+                        mediciones de la red estuvieron entre 0,30 y 0,97 mg/L,
+                        dentro del límite.
                     </p>
-
-                    <p class="text-muted">
-                        Entre las labores contempladas se encuentran la
-                        limpieza de las instalaciones, revisión de componentes
-                        y atención de aquellos elementos que requieran
-                        mantenimiento preventivo o correctivo.
-                    </p>
-
                     <p class="text-muted mb-0">
-                        Estas acciones permiten prevenir problemas y contribuir
-                        al funcionamiento adecuado y seguro del acueducto.
+                        Además, el control operativo lo realiza CAISA cada mes y
+                        el Laboratorio Nacional de Aguas (AyA) analizó muestras
+                        en octubre de 2025: coliformes fecales y
+                        <em>E. coli</em> negativos.
                     </p>
                 </div>
 
@@ -362,94 +358,151 @@
                     <i class="bi bi-plus-circle"></i>
                     Haz clic para conocer más
                 </small>
-
             </div>
         </div>
 
     </div>
-    <section id="tratamiento" class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-2">Tratamiento del agua</h2>
+</section>
+
+
+<!-- ===================== SECCIÓN: TANQUE DE ALMACENAMIENTO ===================== -->
+<section id="tanque" class="container my-5 py-5">
+    <h5 class="text-left text-info">Nuestro sistema</h5>
+    <h2 class="fw-bold text-center mb-2">
+        Tanque de <span class="text-info">almacenamiento</span>
+    </h2>
     <p class="text-center text-muted mb-5">
-      Así cuidamos que el agua que llega a su casa sea segura para consumo.
+        La reserva de agua que abastece a toda la comunidad
     </p>
 
-    <div class="row g-4 mb-5">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 p-4 text-center">
-          <i class="bi bi-droplet-half fs-1 text-info"></i>
-          <h4 class="fw-bold mt-3">Cloración</h4>
-          <p class="text-muted mb-0">
-            El agua del pozo se desinfecta con hipoclorito de sodio al 12 %,
-            aplicado de forma automática con una bomba dosificadora digital.
-          </p>
+    <div class="row g-4 text-center mb-4">
+        <div class="col-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 p-3">
+                <i class="bi bi-droplet-half fs-1 text-info"></i>
+                <h3 class="fw-bold mb-0">70 m³</h3>
+                <small class="text-muted">tanque elevado metálico</small>
+            </div>
         </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 p-4 text-center">
-          <i class="bi bi-clipboard2-pulse fs-1 text-info"></i>
-          <h4 class="fw-bold mt-3">Control del cloro</h4>
-          <p class="text-muted mb-0">
-            Se mide el cloro residual libre en el pozo, el tanque y distintas
-            casas de la red. El valor máximo permitido es 1,0 mg/L.
-          </p>
+        <div class="col-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 p-3">
+                <i class="bi bi-moisture fs-1 text-info"></i>
+                <h3 class="fw-bold mb-0">3 veces</h3>
+                <small class="text-muted">al año se limpia por dentro</small>
+            </div>
         </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 p-4 text-center">
-          <i class="bi bi-moisture fs-1 text-info"></i>
-          <h4 class="fw-bold mt-3">Limpieza del tanque</h4>
-          <p class="text-muted mb-0">
-            El tanque de 70 m³ se lava por dentro tres veces al año, y el pozo
-            se lava y limpia cada mes.
-          </p>
+        <div class="col-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 p-3">
+                <i class="bi bi-person-badge fs-1 text-info"></i>
+                <h3 class="fw-bold mb-0">24 h</h3>
+                <small class="text-muted">vigilancia en el sitio</small>
+            </div>
         </div>
-      </div>
+        <div class="col-6 col-md-3">
+            <div class="card h-100 shadow-sm border-0 p-3">
+                <i class="bi bi-speedometer2 fs-1 text-info"></i>
+                <h3 class="fw-bold mb-0">Automático</h3>
+                <small class="text-muted">control de nivel</small>
+            </div>
+        </div>
     </div>
 
-    <h3 class="fw-bold mb-3">¿Cómo funciona el proceso?</h3>
-    <div class="row g-4 text-center mb-5">
-      <div class="col-6 col-md-3">
-        <div class="card h-100 shadow-sm border-0 p-3">
-          <i class="bi bi-1-circle fs-1 text-info"></i>
-          <h6 class="fw-bold mt-2">Extracción</h6>
-          <small class="text-muted">Se bombea el agua desde el pozo BA-328</small>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card h-100 shadow-sm border-0 p-3">
-          <i class="bi bi-2-circle fs-1 text-info"></i>
-          <h6 class="fw-bold mt-2">Desinfección</h6>
-          <small class="text-muted">El clorador aplica el cloro en el área del pozo</small>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card h-100 shadow-sm border-0 p-3">
-          <i class="bi bi-3-circle fs-1 text-info"></i>
-          <h6 class="fw-bold mt-2">Almacenamiento</h6>
-          <small class="text-muted">Pasa al tanque elevado de 70 m³</small>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card h-100 shadow-sm border-0 p-3">
-          <i class="bi bi-4-circle fs-1 text-info"></i>
-          <h6 class="fw-bold mt-2">Distribución</h6>
-          <small class="text-muted">Llega a las casas por la red de tuberías</small>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="fw-bold mb-3">Análisis y resultados</h3>
-    <ul class="list-group list-group-flush shadow-sm rounded mb-3">
-      <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Control operativo mensual realizado por CAISA (turbidez, olor, pH, temperatura, conductividad y cloro residual).</li>
-      <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Análisis del Laboratorio Nacional de Aguas (AyA) en octubre de 2025.</li>
-      <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Coliformes fecales y <em>E. coli</em> negativos en el pozo, el tanque y la red.</li>
-      <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Cloro residual libre entre 0,40 y 0,51 mg/L en el laboratorio.</li>
+    <ul class="list-group list-group-flush shadow-sm rounded">
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Controladores de nivel que evitan el rebalse y lo mantienen lleno.</li>
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Macromedidor a la entrada, que permite calcular el Índice de Agua No Contabilizada.</li>
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Limpieza interna en 2025: 2 de enero, 17 de junio y 9 de octubre.</li>
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Zonas verdes del tanque con mantenimiento mensual.</li>
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Malla perimetral, caseta de vigilancia, iluminación y sistema de monitoreo.</li>
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Estructura pintada y rotulada.</li>
     </ul>
-    <small class="text-muted">Fuente: Informe Sello de Calidad Sanitaria 2025.</small>
-  </div>
+</section>
+
+
+<!-- ===================== SECCIÓN: PROTECCIÓN DE LAS FUENTES ===================== -->
+<section id="proteccion" class="container my-5 py-5">
+    <h5 class="text-left text-info">Cuidamos el origen</h5>
+    <h2 class="fw-bold text-center mb-2">
+        Programa de protección para las <span class="text-info">fuentes</span>
+    </h2>
+    <p class="text-center text-muted mb-5">
+        El pozo que nos abastece está protegido para evitar riesgos de contaminación
+    </p>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 p-4 text-center">
+                <i class="bi bi-shield-lock fs-1 text-info"></i>
+                <h4 class="fw-bold mt-3">Acceso restringido</h4>
+                <p class="text-muted mb-0">
+                    El pozo permanece cerrado con candados. Solo se abre cuando
+                    la administradora autoriza el ingreso.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 p-4 text-center">
+                <i class="bi bi-bounding-box fs-1 text-info"></i>
+                <h4 class="fw-bold mt-3">Cercado y rotulado</h4>
+                <p class="text-muted mb-0">
+                    Cuenta con cerca perimetral y portón que impiden el paso de
+                    personas no autorizadas y de animales. La estructura está
+                    pintada y rotulada.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 p-4 text-center">
+                <i class="bi bi-tree fs-1 text-info"></i>
+                <h4 class="fw-bold mt-3">Áreas limpias</h4>
+                <p class="text-muted mb-0">
+                    Las zonas verdes del pozo y las áreas protegidas se mantienen
+                    cada mes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="list-group list-group-flush shadow-sm rounded">
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Tablero eléctrico de la bomba protegido en una caseta de concreto.</li>
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Acceso fácil por una calle pública pavimentada para el personal autorizado.</li>
+        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>En la inspección sanitaria de diciembre de 2025 no se marcaron riesgos en el pozo.</li>
+    </ul>
+</section>
+
+
+<!-- ===================== SECCIÓN: MANTENIMIENTO DE LA ESTRUCTURA ===================== -->
+<section id="mantenimiento" class="container my-5 py-5">
+    <h5 class="text-left text-info">Cuidamos lo que construimos</h5>
+    <h2 class="fw-bold text-center mb-2">
+        Mantenimiento de la <span class="text-info">estructura</span>
+    </h2>
+    <p class="text-center text-muted mb-5">
+        Actividades realizadas durante 2025 en el pozo, el tanque y la red
+    </p>
+
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-info">
+                <tr>
+                    <th>Actividad</th>
+                    <th>Frecuencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Lavado y limpieza del pozo</td><td>Mensual</td></tr>
+                <tr><td>Mantenimiento de zonas verdes del pozo y del tanque</td><td>Mensual</td></tr>
+                <tr><td>Mantenimiento preventivo de micromedidores, válvulas y accesorios</td><td>Mensual</td></tr>
+                <tr><td>Cambio de medidores por alto consumo</td><td>Mensual</td></tr>
+                <tr><td>Limpieza y mantenimiento correctivo de micromedidores</td><td>Según demanda</td></tr>
+                <tr><td>Reparación de tuberías</td><td>Cada vez que se detecta una fuga o daño</td></tr>
+                <tr><td>Limpieza interna del tanque</td><td>Tres veces al año</td></tr>
+                <tr><td>Mantenimiento de hidrantes</td><td>Dos veces al año</td></tr>
+                <tr><td>Panel de encendido y apagado de la bomba y el motor</td><td>Cada tres meses</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <small class="text-muted d-block mt-3">Fuente: Informe Sello de Calidad Sanitaria 2025.</small>
 </section>
 </section>
 </div>
