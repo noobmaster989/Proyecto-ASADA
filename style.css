@@ -1,5 +1,6 @@
 #carruselASADA .carousel-item img {
   height: 500px;
+  width: ;
   object-fit: cover;
 }
 
@@ -29,8 +30,7 @@
   position: absolute;
   inset: 0;                     
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  
   z-index: 0;
 }
 
