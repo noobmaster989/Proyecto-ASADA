@@ -518,6 +518,40 @@ padding-top: 40px;
     transform: scale(1.02);
 }
 
+.fondo-degradado {
+  background: linear-gradient(135deg, #043755, #03a1f6);
+}
+
+.titulo-seccion {
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.5px;
+}
+
+.texto-degradado {
+  background: linear-gradient(to right, #7dd3fc, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.icono-archivo {
+  font-size: 2.5rem;
+  color: #0369a1;
+  flex-shrink: 0;
+}
+.subtitulo-seccion {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.15rem;
+  max-width: 600px;
+}
+
+.texto-formulario {
+  font-size: 0.875rem;      
+  line-height: 1.625;    
+  color: #475569;        
+}
 /* En celular */
 @media (max-width: 768px) {
 
