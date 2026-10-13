@@ -1,7 +1,7 @@
 #carruselASADA .item img {
     height: 500px;
  
-  object-fit: fill;
+  object-fit: cover;
 }
 
 #carruselASADA .item-2 img {
