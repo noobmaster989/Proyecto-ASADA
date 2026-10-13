@@ -3,6 +3,13 @@
  
   object-fit: cover;
 }
+
+#carruselASADA .item-2 img {
+  height: 500px;
+ 
+  object-fit: fill;
+  
+}
 #carruselASADA .item-horario img {
   height: 500px;
  
